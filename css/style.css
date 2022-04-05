@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #212025;
+}
+
+.avatar{
+    border-radius: 40%;
+    height: 20vh;
+}
+.cv{
+    position: fixed;
+    right: 100px;
+    z-index: 5;
+}
+.container__background-triangle{
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.triangle{
+    width: 250px;
+    height: 250px;
+    background: red;
+    position: absolute;
+    border-radius: 20px;
+}
+.triangle1{
+    width: 190px;
+    height: 190px;
+     background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+     right: 40px;
+     top: 170px;
+     animation: t1 7s ease infinite;
+}
+.triangle2{
+    width: 140px;
+    height: 140px;
+     background: linear-gradient(to left, #0ea1e6, #1b60ba);
+    left: 50px;
+     top: 290px;
+     animation: t2 8s ease infinite;
+}
+.triangle3{
+    width: 90px;
+    height: 90px;
+     background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+     right: 90px;
+     top: 450px;
+        animation: t3 9s ease infinite;
+}
+.triangle4{
+    width: 60px;
+    height: 60px;
+     background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+     left: 30px;
+     top: 520px;
+        animation: t4 7s ease infinite;
+}
+.triangle5{
+    width: 50px;
+    height: 50px;
+        background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+        left: 100px;
+        top: 140px;
+            animation: t5 8s ease infinite;
+}
+@keyframes t1{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t2{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t3{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t4{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t5{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+.info{
+    width:100%;
+    height: 200px;
+    border: #41414138 solid 2px;
+    text-align: center;
+}
+.git{
+    height: 20px;
+    border-radius: 10px;
+}
+.footer{
+    display: flex;
+}
+.container__cards{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    width: 340px;
+    margin: 40px 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card:hover .cover__card img{
+    transform: scale(1.1);
+}
+.cover__card{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color:#0ea1e6;
+}
+
+.cover__card img{
+    width: 50%;
+    transition: all 300ms;
+    
+}
+#st{
+    width:100%;
+}
+.card h2{
+    font-size:20px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #fff;
+}
+.card p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.card hr{
+    margin-top: 5px;
+    border: none;
+    height: 0.2px;
+    background :#0ea1e6;
+   
+}
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
+}
