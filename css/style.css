@@ -13,11 +13,7 @@ body{
     border-radius: 40%;
     height: 20vh;
 }
-.cv{
-    position: fixed;
-    right: 100px;
-    z-index: 5;
-}
+
 h1{
     z-index: 5;
 }
@@ -43,7 +39,7 @@ h1{
     height: 190px;
      background: linear-gradient(to left, #0ea1e6, #1b60ba); 
      right: 40px;
-     top: 170px;
+     top: 185px;
      animation: t1 7s ease infinite;
 }
 .triangle2{
@@ -51,7 +47,7 @@ h1{
     height: 140px;
      background: linear-gradient(to left, #0ea1e6, #1b60ba);
     left: 50px;
-     top: 290px;
+     top: 300px;
      animation: t2 8s ease infinite;
 }
 .triangle3{
@@ -59,7 +55,7 @@ h1{
     height: 90px;
      background: linear-gradient(to left, #0ea1e6, #1b60ba); 
      right: 90px;
-     top: 450px;
+     top: 465px;
         animation: t3 9s ease infinite;
 }
 .triangle4{
@@ -75,7 +71,7 @@ h1{
     height: 50px;
         background: linear-gradient(to left, #0ea1e6, #1b60ba); 
         left: 100px;
-        top: 140px;
+        top: 160px;
             animation: t5 8s ease infinite;
 }
 @keyframes t1{
@@ -143,6 +139,7 @@ h1{
 .infof{
     width:100%;
     height: 60px;
+    padding-top: 15px;
     text-align: center;
     border: #41414138 solid 2px;
     z-index: 5;
