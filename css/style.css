@@ -29,7 +29,6 @@ h4{
 .triangle{
     width: 250px;
     height: 250px;
-    background: red;
     position: absolute;
     border-radius: 20px;
 }
@@ -66,12 +65,20 @@ h4{
         animation: t4 7s ease infinite;
 }
 .triangle5{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
         background: linear-gradient(to left, #0ea1e6, #1b60ba); 
-        left: 100px;
+        left: 60px;
         top: 160px;
             animation: t5 8s ease infinite;
+}
+.triangle6{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+        background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+        top: 450px;
+            animation: t6 9s ease infinite;
 }
 @keyframes t1{
     0%{
@@ -118,6 +125,17 @@ h4{
     }
 }
 @keyframes t5{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t6{
     0%{
         transform: rotate(45deg) translateY(0);
     }
