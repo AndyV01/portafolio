@@ -8,14 +8,13 @@
 body{
     background-color: #212025;
 }
+h4{
+   margin: 10px;
+}
 
 .avatar{
     border-radius: 40%;
     height: 20vh;
-}
-
-h1{
-    z-index: 5;
 }
 .container__background-triangle{
     max-width: 1200px;
@@ -54,7 +53,7 @@ h1{
     width: 90px;
     height: 90px;
      background: linear-gradient(to left, #0ea1e6, #1b60ba); 
-     right: 90px;
+     right: 70px;
      top: 465px;
         animation: t3 9s ease infinite;
 }
@@ -134,7 +133,7 @@ h1{
     height: 200px;
     border: #41414138 solid 2px;
     text-align: center;
-    z-index: 5;
+    
 }
 .infof{
     width:100%;
@@ -142,7 +141,6 @@ h1{
     padding-top: 15px;
     text-align: center;
     border: #41414138 solid 2px;
-    z-index: 5;
 }
 .git{
     height: 20px;
