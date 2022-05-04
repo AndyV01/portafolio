@@ -219,6 +219,20 @@ a{
     font-weight: 300;
     color: #fff;
     letter-spacing: 0.5px;
+    visibility: visible;
+    animation-duration: 1.5s;
+    animation-name: fadeInLeft;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .card hr{
     margin-top: 5px;
@@ -236,4 +250,5 @@ a{
 .footer__card h3{
     font-size: 15px;
     font-weight: 500;
+    padding-left: 5px;
 }
