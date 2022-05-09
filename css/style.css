@@ -35,56 +35,56 @@ h4{
 .triangle1{
     width: 190px;
     height: 190px;
-     background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+     background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255)); 
      right: 40px;
      top: 185px;
      animation: t1 7s ease infinite;
-     box-shadow: 0 0 5px rgb(234, 192, 245), 0 0 15px rgb(234, 192, 245), 0 0 25px rgb(234, 192, 245), 0 0 45px rgb(234, 192, 245);
+     box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
 }
 .triangle2{
     width: 140px;
     height: 140px;
-     background: linear-gradient(to left, #0ea1e6, #1b60ba);
+     background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255));
     left: 50px;
      top: 300px;
      animation: t2 8s ease infinite;
-     box-shadow: 0 0 5px rgb(234, 192, 245), 0 0 15px rgb(234, 192, 245), 0 0 25px rgb(234, 192, 245), 0 0 45px rgb(234, 192, 245);
+     box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
 }
 .triangle3{
     width: 90px;
     height: 90px;
-     background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+     background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255)); 
      right: 70px;
      top: 465px;
     animation: t3 9s ease infinite;
-    box-shadow: 0 0 5px rgb(234, 192, 245), 0 0 15px rgb(234, 192, 245), 0 0 25px rgb(234, 192, 245), 0 0 45px rgb(234, 192, 245);
+    box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
 }
 .triangle4{
     width: 60px;
     height: 60px;
-    background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+    background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255)); 
     left: 30px;
     top: 520px;
     animation: t4 7s ease infinite;
-    box-shadow: 0 0 5px rgb(234, 192, 245), 0 0 15px rgb(234, 192, 245), 0 0 25px rgb(234, 192, 245), 0 0 45px rgb(234, 192, 245);
+    box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
 }
 .triangle5{
     width: 70px;
     height: 70px;
-    background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+    background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255));
     left: 60px;
     top: 160px;
     animation: t5 8s ease infinite;
-    box-shadow: 0 0 5px rgb(234, 192, 245), 0 0 15px rgb(234, 192, 245), 0 0 25px rgb(234, 192, 245), 0 0 45px rgb(234, 192, 245);       
+    box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);     
 }
 .triangle6{
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    background: linear-gradient(to left, #0ea1e6, #1b60ba); 
+    background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255));
     top: 450px;
     animation: t6 9s ease infinite;
-    box-shadow: 0 0 5px rgb(234, 192, 245), 0 0 15px rgb(234, 192, 245), 0 0 25px rgb(234, 192, 245), 0 0 45px rgb(234, 192, 245);
+    box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
 
 }
 @keyframes t1{
