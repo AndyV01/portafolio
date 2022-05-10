@@ -14,7 +14,16 @@
     <div class="info">
         <img class="avatar" src="images/selfi.jfif" alt="avatar">
         <h1>Andres Vallarino</h1>
+        <div class="boton" id="play">
+            <ion-icon class="play-btn icono" name="headset-outline"></ion-icon>
+            <ion-icon class="pause-btn hide icono" name="volume-mute-outline"></ion-icon>
+        </div>
         <h4>Full Stack</h4>
+        <audio class="player__audio" controls autoplay loop id="audio">
+            <source src="./images/Vandelux_MatterOfTime.mp3" type="audio/mpeg">
+        </audio>
+        
+        
     </div>
     <div class="container__background-triangle">
         <div class="triangle triangle1"></div>
@@ -25,6 +34,7 @@
         <div class="triangle triangle6"></div>
     </div>
     <div class="container__cards">
+      
         <div class="card" data-aos="fade-left">
             <div class="cover__card">
                 <img src="images/01.jpeg" alt="E-commerce"><img src="images/02.jpeg" alt="E-commerce">
@@ -109,6 +119,9 @@
     <div class="infof">
         <a download="CV" href="doc/CV.pdf">download CV</a>
     </div>
+     <script src="audio.js" ></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
