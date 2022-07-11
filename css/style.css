@@ -31,8 +31,11 @@ h4{
     justify-content: center;
     margin: 0 49%;
     border-radius: 50%;
-    box-shadow: -2px -1px 70px 0px rgba(255, 255, 255, 0.429), -3px -2px 3px 0px rgba(255, 255, 255, 0.303),
-    5px 5px 10px rgba(53, 53, 53, 0.067), 5px 5px 6px 0px rgba(53, 53, 53, 0.067);
+    box-shadow:
+    -2px -1px 70px 0px rgba(255, 255, 255, 0.429),
+    -3px -2px 3px 0px rgba(255, 255, 255, 0.303),
+    5px 5px 10px rgba(53, 53, 53, 0.067), 
+    5px 5px 6px 0px rgba(53, 53, 53, 0.067);
     background: #212025;
     border-radius: 15px;
     backdrop-filter: blur(5px);
@@ -246,10 +249,23 @@ a{
 }
 
 .card h2{
-    font-size:20px;
+    font-size:25px;
     font-weight: 400;
     margin-top: 10px;
-    color: #fff;
+    color: rgb(220, 217, 217);
+    animation-duration: 2.5s;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .card p {
     margin-top: 20px;
@@ -258,14 +274,14 @@ a{
     color: #fff;
     letter-spacing: 0.5px;
     visibility: visible;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
     animation-name: fadeInLeft;
     animation-fill-mode: forwards;
 }
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(70px);
     }
     100% {
         opacity: 1;
