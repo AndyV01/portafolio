@@ -262,6 +262,7 @@ a{
  
 .cover__card img{
     width: 50%;
+    object-fit: cover;
 }
 #st{
     width:100%;
@@ -275,6 +276,19 @@ a{
     animation-duration: 2.5s;
     animation-name: fadeIn;
     animation-fill-mode: forwards;
+}
+.card:hover h2{
+    color: #0ea1e6;
+    font-size: 30px; 
+}
+.h{
+    height: 146px !important;
+}
+.g{
+    height: 140px !important;
+}
+.u{
+    height: 156px !important;
 }
 @keyframes fadeIn{
     0%{
