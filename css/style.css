@@ -138,6 +138,20 @@ h1{
     box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
 
 }
+/* Atropos crea overlays que bloquean clics en Safari */
+
+.atropos-scale,
+.atropos-rotate {
+    pointer-events: none;
+}
+
+/* Reactivar clics SOLO donde importa */
+.card,
+.footer__card,
+.footer__card a,
+.footer__card * {
+    pointer-events: auto;
+}
 @keyframes t1{
     0%{
         transform: rotate(45deg) translateY(0);
