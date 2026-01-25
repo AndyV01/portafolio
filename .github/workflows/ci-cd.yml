@@ -1,0 +1,43 @@
+name: CI Pipeline - Portfolio
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate project structure
+        run: |
+          echo "Checking required files..."
+          test -f index.html
+          test -f style.css || true
+          test -f script.js || true
+          echo "Structure OK"
+
+      - name: HTML basic validation
+        run: |
+          grep -i "<html" index.html
+          grep -i "<body" index.html
+          echo "HTML validation passed"
+
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
