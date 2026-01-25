@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #212025;
+}
+h4{
+   margin: 10px;
+}
+h1{
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.695);
+    text-align: center;
+    margin: 15px 0;
+    font-family: sans-serif;
+}
+
+.hide{
+    display: none;
+}
+.my-atropos {
+    width: 340px;
+   
+  }
+  .atroposes{
+    width: 100%;
+    display: flex;
+  }
+
+.avatar{
+    margin-top: 5px;
+    border-radius: 40%;
+    height: 20vh;
+}
+.player__audio{
+    visibility: hidden;
+}
+.boton{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 49%;
+    border-radius: 50%;
+    box-shadow:
+    -2px -1px 70px 0px rgba(255, 255, 255, 0.429),
+    -3px -2px 3px 0px rgba(255, 255, 255, 0.303),
+    5px 5px 10px rgba(53, 53, 53, 0.067), 
+    5px 5px 6px 0px rgba(53, 53, 53, 0.067);
+    background: #212025;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.boton:active {
+    box-shadow: inset -8px -8px 50px #0003, inset -5px -8px 12px #0001,
+      inset 1px 1px 2px rgba(255, 255, 255, 0.318), inset 1px 1px 2px rgba(255, 255, 255, 0.310);
+  }
+.icono{
+    font-size: 1.3rem;
+    color: rgb(78, 72, 255);
+}
+.container__background-triangle{
+    max-width: 1200px;
+    height: 600px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.triangle{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 20px;
+}
+.triangle1{
+    width: 190px;
+    height: 190px;
+     background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255)); 
+     right: 40px;
+     top: 185px;
+     animation: t1 7s ease infinite;
+     box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
+}
+.triangle2{
+    width: 140px;
+    height: 140px;
+     background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255));
+    left: 50px;
+     top: 300px;
+     animation: t2 8s ease infinite;
+     box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
+}
+.triangle3{
+    width: 90px;
+    height: 90px;
+     background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255)); 
+     right: 70px;
+     top: 465px;
+    animation: t3 9s ease infinite;
+    box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
+}
+.triangle4{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255)); 
+    left: 30px;
+    top: 520px;
+    animation: t4 7s ease infinite;
+    box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
+}
+.triangle5{
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255));
+    left: 70px;
+    top: 160px;
+    animation: t5 8s ease infinite;
+    box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);     
+}
+.triangle6{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #2db0ed, rgb(78, 72, 255));
+    top: 450px;
+    animation: t6 9s ease infinite;
+    box-shadow: 0 0 5px rgb(78, 72, 255), 0 0 15px rgb(78, 72, 255), 0 0 25px rgb(78, 72, 255), 0 0 45px rgb(78, 72, 255);
+
+}
+/* Atropos crea overlays que bloquean clics en Safari */
+
+.atropos-scale,
+.atropos-rotate {
+    pointer-events: none;
+}
+
+/* Reactivar clics SOLO donde importa */
+.card,
+.footer__card,
+.footer__card a,
+.footer__card * {
+    pointer-events: auto;
+}
+@keyframes t1{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t2{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t3{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t4{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t5{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes t6{
+    0%{
+        transform: rotate(45deg) translateY(0);
+    }
+    50%{
+        transform: rotate(45deg) translateY(30px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+.info{
+    width:100%;
+    height: 240px;
+    text-align: center;    
+}
+
+.infof{
+    width:100%;
+    height: 60px;
+    padding-top: 25px;
+    text-align: center;
+    border: #41414138 solid 2px;
+}
+.git{
+    height: 20px;
+    border-radius: 10px;
+}
+.footer{
+    display: flex;
+}
+.container__cards{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    
+}
+.card{
+    width: 320px;
+    margin: 40px 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.cover__card{
+    width: 100%;
+    height: 170px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color:#0ea1e6;
+}
+ 
+.cover__card img{
+    width: 50%;
+    object-fit: cover;
+}
+#st{
+    width:100%;
+}
+
+.card h2{
+    font-size:25px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: rgb(220, 217, 217);
+    animation-duration: 2.5s;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}
+.card:hover h2{
+    color: #0ea1e6;
+    font-size: 30px; 
+}
+.h{
+    height: 146px !important;
+}
+.g{
+    height: 140px !important;
+}
+.u{
+    height: 156px !important;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+    visibility: visible;
+    animation-duration: 2.5s;
+    animation-name: fadeInLeft;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.card hr{
+    margin-top: 5px;
+    border: none;
+    height: 0.2px;
+    background :#0ea1e6;
+   
+}
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 5px;
+}
