@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node / tooling (por si luego agregás npm)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build / dist (si en el futuro agregás build)
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Editor
+.vscode/
+.idea/
+
+# Personal / assets no versionables
+doc/
+*.pdf
+*.mp3
+
+# Temporary
+.tmp/
+.cache/

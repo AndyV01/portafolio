@@ -14,19 +14,37 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Validate project structure
-        run: |
-          echo "Checking required files..."
-          test -f index.html
-          test -f style.css || true
-          test -f script.js || true
-          echo "Structure OK"
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-      - name: HTML basic validation
+      - name: Install HTML validator
+        run: npm install -g html-validate
+
+      - name: Validate HTML files
+        run: html-validate "**/*.html"
+
+        - name: Validate HTML files
+        run: html-validate "**/*.html"
+
+      - name: Install CSS linter
+        run: npm install -g stylelint stylelint-config-standard
+
+      - name: Validate CSS files
+        run: stylelint "**/*.css"
+
+      - name: Install ESLint
+        run: npm install -g eslint
+
+      - name: Run ESLint
+        run: eslint "**/*.js" || true
+
+      - name: Check required files
         run: |
-          grep -i "<html" index.html
-          grep -i "<body" index.html
-          echo "HTML validation passed"
+          test -f index.html
+          test -d css
+          test -d images
 
   deploy:
     needs: build-and-test

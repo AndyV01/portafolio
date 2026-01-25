@@ -1,87 +1,51 @@
-# 🌐 Personal Portfolio – Andrés Vallarino
+# Portfolio – Andrés Vallarino
 
-![CI](https://github.com/AndyV01/portafolio/actions/workflows/ci.yml/badge.svg)
+Personal frontend portfolio showcasing projects and skills using HTML, CSS and JavaScript.
 
-Personal portfolio website built with **HTML, CSS and JavaScript**, showcasing my profile, skills and projects.  
-The project includes a **CI/CD pipeline implemented with GitHub Actions**, simulating a real-world development workflow.
-
-🔗 **Live Demo**: https://andyv01.github.io/portafolio/
-
----
-
-## 📌 About the Project
-
-This portfolio was created as a lightweight static web application to present my professional profile as a **Frontend / Full-Stack Developer (React-focused)**.
-
-Although the project does not rely on frameworks or package managers, it follows **modern development practices**, including automated validation, continuous integration and continuous deployment.
-
----
-
-## 🚀 Features
-
-- Responsive layout
-- Clean and semantic HTML structure
-- Custom CSS styling
-- Vanilla JavaScript interactions
-- Automated CI/CD pipeline
-- Automatic deployment to GitHub Pages
-
----
+## 🚀 Live Demo
+https://andyv01.github.io/portafolio/
 
 ## 🛠️ Tech Stack
-
-**Frontend**
 - HTML5
 - CSS3
-- JavaScript (ES6+)
-
-**DevOps / CI-CD**
-- GitHub Actions
-- GitHub Pages
-
-**Tools**
-- Git
-- GitHub
+- JavaScript (Vanilla)
+- Git & GitHub
+- GitHub Actions (CI/CD)
 
 ---
 
-## 🔄 CI/CD Pipeline
+## ⚙️ CI/CD Pipeline
 
-This repository includes a **CI/CD pipeline** configured with **GitHub Actions**.
+This project includes a Continuous Integration and Deployment (CI/CD) pipeline implemented with **GitHub Actions**.
 
-### Pipeline Overview
+### 🔍 Continuous Integration (CI)
 
-The pipeline runs automatically on:
-- Push to `main`
-- Pull Requests to `main`
+On every push or pull request to the `main` branch, the pipeline automatically:
 
-### Pipeline Stages
+- Validates all HTML files using **html-validate**
+- Lints CSS files using **Stylelint**
+- Performs basic JavaScript linting using **ESLint**
+- Checks required project structure and files
 
-1. **Build & Validation**
-   - Repository checkout
-   - Project structure validation
-   - Basic HTML integrity checks
+This ensures code quality and prevents broken changes from being merged.
 
-2. **Automated Tests (Simulated)**
-   - File existence checks
-   - HTML tag validation
+### 🚀 Continuous Deployment (CD)
 
-3. **Deployment**
-   - Automatic deployment to **GitHub Pages**
-   - Deployment only occurs if all previous steps pass
-
-This setup simulates a real CI/CD workflow used in production environments, even for a static project.
+After successful validation:
+- The site is automatically deployed to **GitHub Pages**
+- Deployment runs only if all CI checks pass
 
 ---
 
 ## 📂 Project Structure
 
+```text
 /
 ├── index.html
-├── style.css
-├── script.js
-├── assets/
-├── .github/
-│ └── workflows/
-│ └── ci.yml
-└── README.md
+├── css/
+│   └── style.css
+├── images/
+├── js/
+└── .github/
+    └── workflows/
+        └── ci-cd.yml
