@@ -24,11 +24,6 @@ build/
 .vscode/
 .idea/
 
-# Personal / assets no versionables
-doc/
-*.pdf
-*.mp3
-
 # Temporary
 .tmp/
 .cache/
