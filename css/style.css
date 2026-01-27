@@ -277,8 +277,8 @@ a{
     width: 50%;
     object-fit: cover;
 }
-#st{
-    width:100%;
+.zoom{
+    width:100% !important;
 }
 
 .card h2{
