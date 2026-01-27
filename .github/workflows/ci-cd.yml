@@ -29,7 +29,7 @@ jobs:
         run: npm install -g stylelint stylelint-config-standard
 
       - name: Validate CSS files
-        run: stylelint "**/*.css" --ignore-pattern "**/*.min.css"
+        run: stylelint "**/*.css"
 
       - name: Install ESLint
         run: npm install -g eslint
