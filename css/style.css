@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #212025;
+    background-color: black;
 }
 h4{
    margin: 10px;
@@ -31,10 +31,11 @@ h1{
     display: flex;
   }
 
-.avatar{
-    margin-top: 5px;
-    border-radius: 40%;
-    height: 20vh;
+.avatar {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .player__audio{
     visibility: hidden;
